@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+@fontColor: #c8c9cd;
+@border-style:1px solid black;
+@font-face {
+	font-family: 'iconfont';  /* project id 377925 */
+	src: url('//at.alicdn.com/t/font_377925_0fxzvg1n55ng66r.eot');
+	src: url('//at.alicdn.com/t/font_377925_0fxzvg1n55ng66r.eot?#iefix') format('embedded-opentype'),
+	url('//at.alicdn.com/t/font_377925_0fxzvg1n55ng66r.woff') format('woff'),
+	url('//at.alicdn.com/t/font_377925_0fxzvg1n55ng66r.ttf') format('truetype'),
+	url('//at.alicdn.com/t/font_377925_0fxzvg1n55ng66r.svg#iconfont') format('svg');
+}
+i.font-icon {
+	font: normal normal 24px 'iconfont';
+}
+div.mask-details {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 100;
+	top: 50px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.46);
+	div.book-details-page {
+		margin: 0 auto;
+		width: 90%;
+		background-color: white;
+		border: @border-style;
+		div.delete-icon {
+			position: absolute;
+			right: 30px;
+			top: 10px;
+		}
+		div.content {
+			border-top: @border-style;
+			margin-top: 40px;
+			padding: 10px 10px 20px 10px;
+			div.top-part {
+				display: flex;
+				justify-content: flex-start;
+				img {
+					width: 106px;
+					height: 134px;
+					background-color: orange;
+					margin-right: 20px;
+				}
+				div.bookInfo {
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-start;
+					position: relative;
+					p {
+						font-size: 16px;
+						color: @fontColor;
+						display: flex;
+						justify-content: flex-start;
+						span {
+							text-align: left;
+							font-size: 14px;
+							margin-bottom: 8px;
+							height: 19px;
+							line-height: 19px;
+						}
+						span:first-child {
+							width: 70px;
+							color: @fontColor;
+						}
+						span:last-child {
+							color: #909195;
+						}
+					}
+					#details-item {
+						font-size: 15px;
+						text-align: center;
+						position: absolute;
+						right: 0;
+						bottom: 0;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+					}
+				}
+			}
+			div.middle-content {
+				p.book-name {
+					padding: 10px 0;
+					font: normal bold 18px '宋体';
+				}
+				p.book-describe {
+					width: 100%;
+					padding: 5px 0 30px 0;
+					height: 180px;
+					text-overflow: ellipsis;
+					font-size: 14px;
+					color: @fontColor;
+					overflow: auto;
+				}
+			}
+		}
+		div.price-num {
+			border-top: 2px solid @fontColor;
+			border-bottom: 2px solid @fontColor;
+			display: flex;
+			font-size: 20px;
+			font-weight: 500;
+			p {
+				width: 50%;
+				padding: 10px 0;
+			}
+			p.book-price {
+				padding-left: 10px;
+				border-right:2px solid @fontColor
+			}
+			p.book-num {
+				text-align: center;
+				padding: 6px 30px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				span:first-child,span:last-child {
+
+				}
+				span:nth-child(2) {
+					color: red;
+				}
+			}
+		}
+		div.shop-btn {
+			padding: 10px;
+			button {
+				width: 45%;
+				height: 53px;
+				padding: 5px 0;
+				text-align: center;
+				color: white;
+				font-size: 18px;
+				border-radius: 5px;
+			}
+
+		}
+	}
+}
+

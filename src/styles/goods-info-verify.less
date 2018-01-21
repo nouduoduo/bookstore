@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+@font-color-gray: #aeaeae;
+@border-gray:1px solid gray;
+.flex-style {
+	border-bottom: @border-gray;
+	p {
+		padding: 5px 10px;
+		display: flex;
+		justify-content: space-between;
+		span:first-child,span:last-child {
+			font-size: 14px;
+		}
+		span:first-child {
+			color:@font-color-gray;
+		}
+	}
+}
+div.goods-info-verify {
+	width: 90%;
+	margin:0 auto;
+	h3 {
+		font-size: 18px;
+		margin-bottom: 5px;
+		color: gray;
+		font-weight: bold;
+	}
+	div.info-verify-wrap {
+		border: 1px solid black;
+		h3 {
+			color: black;
+			padding: 10px;
+		}
+		section.price-info {
+			border-bottom: @border-gray;
+			p {
+				padding: 5px 10px;
+				display: flex;
+				justify-content: space-between;
+				span:first-child,span:last-child {
+					font-size: 14px;
+				}
+				span:first-child {
+					color:@font-color-gray;
+				}
+			}
+			p.sub-price {
+				span {
+					font-weight: bold;
+					font-size: 20px;
+				}
+				span:first-child {
+					color: red;
+				}
+				span:last-child {
+					color: #ff7d0f;
+				}
+			}
+		}
+		section.take-goods-info {
+			p {
+				justify-content: flex-start;
+				span:first-child {
+					width: 100px;
+				}
+			}
+		}
+		section.add-alter-address {
+			font-size: 16px;
+			font-weight: 500;
+		}
+	}
+}
